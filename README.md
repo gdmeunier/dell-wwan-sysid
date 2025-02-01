@@ -39,7 +39,7 @@ If you still can't figure out what your 'magic number' should be, or if you don'
 *Note: the older driver_auth.exe file seems to work better than the newer versions, and it's the same algorithm anyway.*
 
 ### I don't have a Dell laptop, but it also has a SIM slot. How do I bypass the sysID check?
-Then you cannot generate a self-whitelisted version of the *dell_wwan_sysID.dat* file begin your laptop isn't even a Dell one, even if you also have a motherboard with brandband support (and *SIM* slot, not a normal *smartcard* reader).
+Then you cannot generate a self-whitelisted version of the *dell_wwan_sysID.dat* file because your laptop isn't even a Dell one, even if you also have a motherboard with brandband support (and *SIM* slot, not a normal *smartcard* reader).
 
 Instead you have to use Windows **IFEO** (*Image File Execution Options*) to hijack the execution of any file named **driver_auth.exe** to a fake program that just returns the exit code 0 and exits.
 

@@ -43,13 +43,13 @@ Then you cannot generate a self-whitelisted version of the *dell_wwan_sysID.dat*
 
 Instead you have to use Windows **IFEO** (*Image File Execution Options*) to hijack the execution of any file named **driver_auth.exe** to a fake program that just returns the exit code 0 and exits.
 
-Example: use IFEO to hijack **driver_auth.exe** process names and redirect them to *nop-pe**:
+Example: use IFEO to hijack **driver_auth.exe** process names and redirect them to **nop-pe**:
 - [https://github.com/myfreeer/nop](https://github.com/myfreeer/nop)
 
 Myfreeer's *nop* program is a dummy EXE file that just does nothing and exits with exitcode 0.\
 Dell's WWAN card setups actually rely on the exitcode as the result of its laptop model verification process.
 
-You can easily configure IFEO with Diversenok's *ExecutionMaster*:
+You can easily configure IFEO with Diversenok's **ExecutionMaster**:
 - [https://github.com/diversenok/ExecutionMaster](https://github.com/diversenok/ExecutionMaster)
 
 Diversenok's *ExecutionMaster* program allows not only you to easily configure IFEOs without regedit, it also even has its own 'Deny and return error code' feature.\

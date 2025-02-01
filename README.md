@@ -36,6 +36,8 @@ If you need the 'magic number' at the first column of the sysID file for your mo
 
 If you still can't figure out what your 'magic number' should be, or if you don't have a Dell brandband-enabled laptop, then see [Method 2](#i-dont-have-a-dell-laptop-but-it-also-has-a-sim-slot-how-do-i-bypass-the-sysid-check).
 
+*Note: the older driver_auth.exe file seems to work better than the newer versions, and it's the same algorithm anyway.*
+
 ### I don't have a Dell laptop, but it also has a SIM slot. How do I bypass the sysID check?
 Then you cannot generate a self-whitelisted version of the *dell_wwan_sysID.dat* file begin your laptop isn't even a Dell one, even if you also have a motherboard with brandband support (and *SIM* slot, not a normal *smartcard* reader).
 

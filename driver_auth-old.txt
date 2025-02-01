@@ -1,0 +1,51 @@
+
+Bypass Dell WWAN SysID
+----------------------
+
+list of old commands = D:L:M:HG:T
+list of new commands = D:L:M:U::HC:PVG:T
+
+D = decrypt
+L = encrypt
+
+password = 'HELMSLEY'
+
+usage decrypt = driver_auth-old.exe -D HELMSLEY
+usage encrypt = driver_auth-old.exe -L HELMSLEY
+
+Note: The driver_auth.exe file cannot be used from
+      cmd.exe, it's only possible to directly call
+      it; such as using a batch file or a dedicated
+      scripting tool, VBScript etc
+
+Note: Filename must be either "dell_wwan_sysID.dat"
+      or "dell_wwan_sysID.txt"
+
+Note: Make sure that the output file does not already
+      exist before running the tool, for example if
+      you decrypt then the "dell_wwan_sysID.txt" file
+      must not already exist in the same folder.
+
+      If you encrypt then the "dell_wwan_sysID.dat"
+      file must not already exist in the same folder.
+
+Example of how to create an universal sysID for your laptop model:
+
+1259,1, Dell Latitude E6420 Notebook, D5510 | D5511 | D5512 | D5513 | D5514 | D5515 | D5516 | D5517 | D5518 | D5519 | D5520 | D5521 | D5522 | D5523 | D5524 | D5525 | D5526 | D5527 | D5528 | D5529 | D5530 | D5531 | D5532 | D5533 | D5534 | D5535 | D5536 | D5537 | D5538 | D5539 | D5540 | D5541 | D5542 | D5543 | D5544 | D5545 | D5546 | D5547 | D5548 | D5549 | D5550 | D5551 | D5552 | D5553 | D5554 | D5555 | D5556 | D5557 | D5558 | D5559 | D5560 | D5561 | D5562 | D5563 | D5564 | D5565 | D5566 | D5567 | D5568 | D5569 | D5570 | D5571 | D5572 | D5573 | D5574 | D5575 | D5576 | D5577 | D5578 | D5579 | D5580 | D5581 | D5582 | D5583 | D5584 | D5585 | D5586 | D5587 | D5588 | D5589 | D5590 | D5591 | D5592 | D5593 | D5594 | D5595 | D5596 | D5597 | D5598 | D5599
+
+For the first value you can find it in official WWAN drivers
+that match your Dell laptop model, then just reuse it on the
+incompatible Dell WWAN setup for a different model.
+
+Because yes Dell is cucked and refuses to let people install
+a different Dell WWAN card than factory one in their laptop.
+
+With this sysID bypass you can now use a Dell-branded card
+from a newer laptop model with a better connectivity and
+install its WWAN drivers on your older laptop model.
+
+The advantage of this instead of using non-Dell WWAN cards
+is simply that the Dell BIOS has better support for its own
+broadcard WWAN cards, otherwise the Dell BIOS will say that
+there's no WWAN card installed.
+
